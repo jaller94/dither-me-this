@@ -1,4 +1,4 @@
-const { setPixel, getPixel, randomInteger } = require('../utilities')
+const { setPixel, getPixel } = require('../utilities')
 const bayerMatrix = require('../functions/bayer-matrix')
 const findClosestPaletteColor = require('../functions/find-closest-palette-color')
 

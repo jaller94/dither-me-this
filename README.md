@@ -34,7 +34,7 @@ fs.readFile("input.jpg", async (err, data) => {
 
     if (err) throw err
 
-    const ditheredImage = await dither(data, options)
+    const ditheredImage = dither(data, options)
 
     fs.writeFile('output.png', ditheredImage, (err) => {
 
@@ -124,7 +124,7 @@ These options only apply if `ditheringType` is set to `ordered`…
 
 There is currently only one option for this: `bayer`. Others may be added in the future.
 
-#### `orderedMatrix` &lt[number, number]&gt; (default:[4,4])
+#### `orderedMatrix` &lt;[number, number]&gt; (default:[4,4])
 
 The number of columns and rows respectively of the bayer matrix.
 

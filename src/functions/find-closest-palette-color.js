@@ -19,9 +19,8 @@ const findClosestPaletteColor = (pixel, colorPalette) => {
         }
     })
 
-    if (!closestColor.color[3]) {
-        closestColor.color.push(255) // if no alpha value is present add it.
-    }
+    // if no alpha value is present add it.
+    closestColor.color[3] = closestColor.color[3] ?? 255;
 
     return closestColor.color
 }

@@ -26,7 +26,7 @@ const findClosestPaletteColor = (pixel, colorPalette) => {
     return closestColor.color
 }
 
-const distanceInColorSpace = (color1, color2) => { // Currenlty ignores alpha
+const distanceInColorSpace = (color1, color2) => { // Currently ignores alpha
 
     // Luminosity needs to be accounted for, for better results.
     // var lumR = .2126,

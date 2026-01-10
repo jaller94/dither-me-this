@@ -1,4 +1,4 @@
-const { createCanvas, Image, loadImage } = require('canvas')
+const { createCanvas, loadImage } = require('canvas')
 
 
 async function bufferToImageData (buffer) {

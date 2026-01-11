@@ -4,7 +4,7 @@
   "description": "Dither images at build time for static site generators.",
   "main": "src/index.js",
   "author": "ShadowfaxRodeo",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "canvas": "^2.8.0"
   }

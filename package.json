@@ -5,7 +5,7 @@
   "main": "src/index.js",
   "author": "ShadowfaxRodeo",
   "license": "ISC",
-  "dependencies": {
+  "devDependencies": {
     "canvas": "^2.8.0"
   }
 }

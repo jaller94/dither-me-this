@@ -29,7 +29,7 @@ function error_diffusion (image, { colors, errorDiffusionMatrix }) {
         diffusionMap.forEach(diffusion => {
             let pixelOffset = (diffusion.offset[0] * 4) + (diffusion.offset[1] * 4 * image.width)
             let pixelIndex = currentPixelIndex + pixelOffset
-            if (!image.data[pixelIndex]) { // Check if pixel exists e.g. on the edges
+            if (image.data[pixelIndex] === undefined) { // Check if pixel exists e.g. on the edges
                 return
             }
             const errorPixel = addQuantError(getPixel(image, pixelIndex), quantError, diffusion.factor)

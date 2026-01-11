@@ -1,0 +1,9 @@
+{
+  "name": "@jaller94/dither-me-this",
+  "version": "0.1.0",
+  "license": "MIT",
+  "exports": "./src/index.ts",
+  "imports": {
+    "@std/assert": "jsr:@std/assert@^1.0.13"
+  }
+}
